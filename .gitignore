@@ -1,0 +1,14 @@
+*.bin
+*.body
+*.connscan
+*.dat
+*.dmp
+*.exe
+*.gz
+*.imageinfo
+*.kdbgscan
+*.pcap
+*.pslist
+*.timeline
+*.vacb
+*.zip
