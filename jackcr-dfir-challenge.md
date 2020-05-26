@@ -69,8 +69,10 @@
   * vol.exe -f FLD-SARIYADH-43/memdump.bin shellbags --profile=WinXPSP3x86 --output=body --machine=FLD --output-file=evidence/FLD_shellbags.body
   * vol.exe -f DC-USTXHOU/memdump.bin shellbags --profile=Win2003SP0x86 --output=body --machine=DC --output-file=evidence/DC_shellbags.body
 
-* Automation script
+* timelineAuto.ps1 script
   * -D DUMP_DIR, --dump-dir=DUMP_DIR Directory in which to dump extracted files
   * -i  -i, --ignore-case Ignore case in pattern match
   * -r REGEX, --regex=REGEX Dump files matching REGEX
-vol.exe -f FLD-SARIYADH-43/memdump.bin dumpfiles -i -r config.security\$ -D evidence/REG/FLD-SARIYADH-43
+  * [timeline.py](https://github.com/williballenthin/python-registry)
+  * [log2timeline](https://code.google.com/p/log2timeline/)
+  * vol.exe -f FLD-SARIYADH-43/memdump.bin dumpfiles -i -r config.security$ -D evidence/REG/FLD-SARIYADH-43
