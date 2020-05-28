@@ -12,3 +12,10 @@
 *.timeline
 *.vacb
 *.zip
+*.strings
+*_all
+*.chronological
+/evidence
+/dist
+*.py
+
