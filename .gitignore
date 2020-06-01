@@ -18,4 +18,6 @@
 /evidence
 /dist
 *.py
+/python-registry
+
 

@@ -1,5 +1,7 @@
 # timeline automation
 
+# Not very sure this is working properly as the .registry.body seems to have only one date. Don't know where the problem is
+
 # $machines = "FLD-SARIYADH-43"
 # $registry = "config.system"
 
@@ -27,7 +29,8 @@ Foreach ($machine in $machines) {
     $output = -join ($dir, '.registry.body')
     Foreach ($file in $registryFiles) {
         $timelineCommand = "python timeline.py --body $dir\$file >> $output"
-        Invoke-Expression $timelineCommand        
+        $timelineCommand
+        Invoke-Expression $timelineCommand
     }
 
     $shortRegistry = -join ($short, ' Registry')
