@@ -1,0 +1,47 @@
+Welcome and thank you for participating in the @jackcr dfir challenge. 
+
+What is provided:
+	evidence files from 4 machines
+	pcap of traffic taken from the 172.16.150.0/24 network
+
+The objective of this challenge is to 
+1. Determine compromised machines.  
+	a. evidence files were collected from machines suspected to be involved in this incident
+	
+2. Identify the who, what, when and how
+
+3. Make a determination based on the evidence provided if you believe this incident is fully contained, or are there additional machines that you believe may still be involved.
+
+***NOTE: Times listed in the timelines are UTC
+
+Now for the fun.
+
+An ids alert initially triggered on ENG-USTXHOU-148 for an established port 80 connection to a known bad ip address. 
+
+1. Who delivered the attack?
+2. Who was the attack delivered too?
+3. What time was the attack delivered?
+4. What time was the attack executed?
+5. What is the C2 ip Address?
+6. What is the name of the dropper?
+7. What is the name of the backdoor?
+8. What is the process name the backdoor is running in?
+9. What is the process id on all the machines the backdoor is installed on?
+10. What usernames were used in this attack?
+11. What level of access did the attacker have?
+12. How was lateral movement performed?
+13. What .bat scripts were placed on the machines?
+14. What are the contents of each .bat script?
+15. What other tools were placed on the machines by the attacker?
+16. What directory was used by the attacker to drop tools?
+17. Was the directory newly created or was it there prior to the attack?
+18. What were the names of the exfiltrated files?
+19. What did the exfiltrated files contain? 
+20. What time did winrar run?
+21. What is the md5sum of pump1.dwg?
+22. Which machines were compromised and need to be remediated?
+23. Which user accounts were compromised and need to be remediated?
+24. Are there additional machines that need to be analyzed?
+25. Describe how each machine was involved in this incident and overall what happened.
+
+Thanks for playing.  I would appreciate if you downloaded and went through this challenge if you could ping me on twitter (@jackcr) and just give me a thumbs up or thumbs down.  This was a lot of work to put together and your feedback will help me decide how often to release these. 

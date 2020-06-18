@@ -300,6 +300,16 @@ REG_DWORD     ConnectionType  : (S) 1
 REG_DWORD     DeferFlags      : (S) 4
 ```
 
+* Using handles plugin in combination with symlinscan to get the exact time when the remote share was mounted
+
+``λ vol.exe -f ENG-USTXHOU-148\memdump.bin --profile=WinXPSP3x86 handles -t File`` -> filter by Mup or LanmanRedirector
+``0x8223af28   1024     0x167c   0x100000 File             \Device\LanmanRedirector\;R:000000000000c21e\172.16.150.10\ITShare``
+``0x8204b410   1024     0x180c   0x100000 File             \Device\LanmanRedirector\;Z:00000000000003e7\172.16.223.47\z``
+
+``λ vol.exe -f ENG-USTXHOU-148\memdump.bin --profile=WinXPSP3x86 symlinkscan``
+``0x000000000ab96398      1      0 2012-11-27 01:56:50 UTC+0000   R:                   \Device\LanmanRedirector\;R:0...00c21e\172.16.150.10\ITShare``
+``00000b0a3608      1      0 2012-11-27 00:48:19 UTC+0000   Z:                   \Device\LanmanRedirector\;Z:00000000000003e7\172.16.223.47\z``
+
 ## Scheduled Jobs for Hash Dumping
 
 * Inside webui folder there was also system5.bat -> [ENG MFT FILE_NAME] WINDOWS\webui\system5.bat (Offset: 0x10b97800)"
